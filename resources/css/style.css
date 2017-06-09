@@ -1,0 +1,299 @@
+/***************************************************
+** Color Blue : #007EFF
+***************************************************/
+
+/***************************************************
+** BASIC
+***************************************************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+    text-rendering: optimizeLegibility;
+    height: 100vh;
+    overflow-x: hidden;
+    background: -webkit-linear-gradient(top left, #298DFF, rgb(49, 255, 207));
+    background: linear-gradient(to bottom right, #298DFF, rgb(49, 255, 207));
+/*    background-image: url(img/background.png);*/
+}
+
+.row {
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+.container {
+    margin: 40px auto;
+    width: 850px;
+}
+
+/***************************************************
+** MISCELLANEOUS
+***************************************************/
+
+/*------------------- Buttons -----------------*/
+.add-btn,
+.item-delete-btn {
+    outline: none;
+}
+
+.add-btn {
+    width: 50px;
+    padding: 5px;
+    background: #fff;
+    color: #007EFF;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    font-size: 150%;
+    vertical-align: middle;
+    margin-top: -4px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.add-btn:hover {
+    border: 1px solid #007EFF;
+}
+
+.item-delete-btn {
+    color: #fff;
+    background: none;
+    border: none;
+    margin-right: 10px;
+    width: 0px;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.item-delete-btn i {
+    cursor: pointer;
+}
+
+
+/***************************************************
+** HEADER
+***************************************************/
+.logo-box {
+    margin-top: 50px;
+}
+
+.logo-box img {
+    width: 15%
+}
+
+/***************************************************
+** BUDGET
+***************************************************/
+.budget-title,
+.budget-value {
+    text-align: center;
+}
+
+.budget-title {
+    font-size: 90%;
+    margin-bottom: 20px;;
+}
+
+.budget-value {
+    font-size: 200%;
+}
+
+/*------------------- Budget Box -----------------*/
+.budget-box {
+    text-align: center;
+}
+
+.budget-income,
+.budget-expenses,
+.budget-income-value,
+.budget-expenses-value,
+.budget-income-percentage,
+.budget-expenses-percentage {
+    display: inline-block;
+}
+
+.budget-income,
+.budget-expenses {
+    width: 260px;
+    background-color: #fff;
+    color: #007EFF;
+    padding: 15px 20px;
+    font-size: 120%;
+    font-weight: 300;
+    border-radius: 8px;
+    margin: 40px 20px 40px 0;
+    box-shadow: 0 4px 20px rgba(96, 96, 96, 0.2);
+}
+
+.budget-expenses {
+    margin-right: 0;
+}
+
+.budget-income-percentage,
+.budget-expenses-percentage {
+    font-size: 70%;
+    padding: 5px 0;
+    width: 40px;
+    margin-left: 5px;
+    background-color: #badcff;
+    border-radius: 6px;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+
+.budget-income-percentage {
+    width: 0; 
+}
+
+/*------------------- Add box -----------------*/
+.add-type,
+.add-description,
+.add-value,
+.add-btn {
+    box-shadow: 0 4px 20px rgba(132, 132, 132, 0.2);
+}
+
+.add-type {
+    background: #fff;
+    color: #007EFF;
+    width: 55px;
+    height: 44px;
+    border: 1px solid #fff;
+    margin-right: 10px;
+    outline: none;
+}
+
+.add-description,
+.add-value {
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #007EFF;
+    height: 45px;
+    text-align: center;
+    outline: none;
+    border-radius: 6px;
+    margin-right: 10px;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #007EFF;
+    font-weight: 300;
+    font-size: 90%
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: #007EFF;
+    font-weight: 300;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: #007EFF;
+    font-weight: 300;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: #007EFF;
+    font-weight: 300;
+}
+
+.add-description {
+    width: 400px;
+}
+
+.add-value{
+    width: 110px;
+    padding: 6px;
+}
+
+/***************************************************
+** BOTTOM
+***************************************************/
+.bottom {
+    margin-top: 50px;
+}
+
+.income, .expenses {
+    width: 410px;
+    margin-right: 25px;
+    float: left;
+}
+
+.expenses {
+    margin-right: 0;
+}
+
+
+.incom-title, 
+.expenses-title {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 80%;
+    line-height: 145%;
+}
+
+/*------------------- Item -----------------*/
+.item {
+    padding: 20px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 6px;
+    letter-spacing: 1px;
+    font-size: 120%;
+    margin-bottom: 10px;
+}
+
+.item:hover 
+.item-delete-btn {
+    opacity: 1;
+    width: 30px;
+}
+
+.item-title,
+.item-value,
+.item-delete{
+    display: inline-block;
+}
+
+.right {
+    float: right;
+}
+
+.item-title {
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+.item-value {
+    margin-right: 10px;
+}
+
+.item-percentage {
+    display: inline-block;
+    font-size: 60%;
+    background-color: #badcff;
+    color: #3398ff;
+    padding: 3px;
+    vertical-align: middle;
+    margin-top: -4px;
+    border-radius: 6px;
+    margin-left: 6px;
+    margin-right: 10px;
+    width: 40px;
+    text-align: center;
+    padding: 5px 0;
+}
+
+
+
+
+
+
+

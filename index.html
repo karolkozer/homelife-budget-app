@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Karol Kozer">
+    <title>HomeLife Budget</title>
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="vendors/css/animate.min.css">
+    <!-- Ionicons CSS -->
+    <link rel="stylesheet" href="vendors/css/ionicons.min.css">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="resources/css/style.css">
+    <!-- Rubik Font -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700" rel="stylesheet">
+</head>
+
+<body>
+   
+   <header>
+       <div class="row">
+           <div class="logo-box">
+               <img src="resources/img/home-life-logo.png" alt="">
+           </div>
+       </div>
+   </header>
+   
+   <div class="container">
+       <div class="top">
+           <div class="row">
+               <div class="budget-title">
+                   Avaiable Budget in <span class="budget-title--month">%Month%</span>
+               </div><!-- End Budget Title -->
+
+               <div class="budget-value">+ 2,345.64</div>
+
+               <div class="budget-box">
+                   <div class="budget-income">
+                       <div class="budget-income-value">+ 4,300.00</div>
+                       <div class="budget-income-percentage">&nbsp;</div>
+                   </div>
+
+                   <div class="budget-expenses">
+                       <div class="budget-expenses-value">- 1,954.36</div>
+                       <div class="budget-expenses-percentage">45%</div>
+                   </div>
+
+                   <div class="add">
+                       <select class="add-type">
+                           <option value="inc" selected>+</option>
+                           <option value="exp">-</option>
+                       </select>
+
+                       <input type="text" class="add-description" placeholder="Add description">
+
+                       <input type="number" class="add-value" placeholder="Value">
+
+                       <button class="add-btn"><i class="ion-ios-checkmark-outline"></i></button>
+                   </div>
+
+               </div><!-- End Budget Box -->
+           </div><!-- End Row -->
+       </div><!-- End Top -->
+       
+       <div class="bottom">
+           <div class="row">
+              
+               <div class="income">
+                   <div class="incom-title">Income</div>
+                   
+                   <div class="income-list">
+                      
+<!--
+                       <div class="item id="income-0">
+                           <div class="item-title">Salary</div>
+                           <div class="right">
+                               <div class="item-value">+ 2,100.00</div>
+                               <div class="item-delete">
+                                   <button class="item-delete-btn">
+                                       <i class="ion-ios-close-outline"></i>
+                                   </button>
+                               </div>
+                           </div>
+                       </div>
+-->
+                       
+                   </div><!-- End Income List -->
+                   
+               </div><!-- End Income -->
+               
+               <div class="expenses">
+                   <div class="expenses-title">Expenses</div>
+                   
+                   <div class="expenses-list">
+                      
+<!--
+                       <div class="item" id="expenses-0">
+                           <div class="item-title">Rent</div>
+                           <div class="right">
+                               <div class="item-value">+ 1,100.00</div>
+                               <div class="item-delete">
+                                   <button class="item-delete-btn">
+                                       <i class="ion-ios-close-outline"></i>
+                                   </button>
+                               </div>
+                           </div>
+                        </div>
+-->
+                       
+                   </div><!-- End Expenses List -->
+                   
+               </div><!-- End Expenses -->
+               
+           </div><!-- End Row -->
+       </div><!-- End Bottom -->
+       
+   </div><!-- End Container -->
+   
+    <script src="resources/js/script.js"></script>
+</body>
+</html>
